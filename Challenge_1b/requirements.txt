@@ -1,4 +1,0 @@
-PyMuPDF
-pytesseract
-Pillow
-tqdm
