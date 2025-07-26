@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "input_documents": [
+      "South of France - Cities.pdf",
+      "South of France - Cuisine.pdf",
+      "South of France - History.pdf",
+      "South of France - Restaurants and Hotels.pdf",
+      "South of France - Things to Do.pdf",
+      "South of France - Tips and Tricks.pdf",
+      "South of France - Traditions and Culture.pdf"
+    ],
+    "persona": "Travel Planner",
+    "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.",
+    "processing_timestamp": "2025-07-26T20:07:01.986527"
+  },
+  "extracted_sections": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "section_title": "Content from South of France - Tips and Tricks.pdf",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "section_title": "Content from South of France - Things to Do.pdf",
+      "importance_rank": 2,
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "section_title": "Content from South of France - Restaurants and Hotels.pdf",
+      "importance_rank": 3,
+      "page_number": 1
+    },
+    {
+      "document": "South of France - History.pdf",
+      "section_title": "Content from South of France - History.pdf",
+      "importance_rank": 4,
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "section_title": "Content from South of France - Cities.pdf",
+      "importance_rank": 5,
+      "page_number": 1
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "refined_text": "The Ultimate South of France Travel Companion: Your Comprehensive Guide to Packing, Planning, and Exploring Introduction Planning a trip to the South of France requires thoughtful preparation to ensure a comfortable and enjoyable experience. Additional Tips: The South of France can get very hot in the summer, so stay hydrated and seek shade during peak sun hours. Additional Tips: Pack a few statement pieces that can be dressed up or down, such as a versatile dress or a pair of stylish shoes.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "refined_text": "Ultimate Guide to Activities and Things to Do in the South of France Introduction The South of France, with its stunning coastline, picturesque villages, and vibrant cities, offers a wealth of activities and experiences for travelers. Family-Friendly Activities The South of France offers a variety of activities that are perfect for families with children: Theme Parks and Attractions Antibes: Visit Marineland for marine shows and an aquarium. Nightlife and Entertainment The South of France offers a vibrant nightlife scene, with options ranging from chic bars to lively nightclubs: Bars and Lounges Monaco: Enjoy classic cocktails and live jazz at Le Bar Americain, located in the Hôtel de Paris.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "refined_text": "La Colombe d'Or (Saint-Paul-de-Vence): A historic restaurant and hotel that has hosted famous artists and celebrities, offering a luxurious dining experience with a focus on Provençal cuisine. La Colombe d'Or (Saint-Paul-de-Vence): A historic restaurant and hotel that has hosted famous artists and celebrities, offering a luxurious dining experience with a focus on Provençal cuisine. Whether you're looking for budget-friendly eateries, family-friendly spots, upscale dining, or luxurious experiences, this guide will help you find the perfect places to eat and stay during your trip.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - History.pdf",
+      "refined_text": "Cryptoporticus: An underground gallery built by the Romans in the 1st century BC, it served as a foundation for the Forum and is one of the few remaining examples of such structures. Aix-en-Provence: A City of Art and Culture Aix-en-Provence, founded by the Romans in 123 BC, is known for its elegant architecture, vibrant cultural scene, and association with the painter Paul Cézanne. Whether you're exploring the vibrant streets of Marseille, the elegant boulevards of Aix-en- Provence, or the charming squares of Montpellier, you'll find a wealth of historical treasures waiting to be discovered.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "refined_text": "Comprehensive Guide to Major Cities in the South of France Introduction The South of France, known for its stunning landscapes, Mediterranean coastline, and rich cultural heritage, is home to some of the most beautiful and historically significant cities in the country. Aix-en-Provence: A City of Art and Culture History Aix-en-Provence, founded by the Romans in 123 BC, is known for its elegant architecture, vibrant cultural scene, and association with the painter Paul Cézanne. Whether you're exploring the vibrant streets of Marseille, the elegant boulevards of Aix-en-Provence, or the charming squares of Montpellier, you'll find a wealth of historical treasures and cultural experiences waiting to be discovered.",
+      "page_number": 1
+    }
+  ]
+}
