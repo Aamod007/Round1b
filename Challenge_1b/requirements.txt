@@ -1,7 +1,0 @@
-PyMuPDF
-pytesseract
-Pillow
-tqdm
-sentence-transformers
-langdetect
-scikit-learn
