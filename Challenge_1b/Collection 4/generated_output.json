@@ -1,0 +1,48 @@
+{
+    "metadata": {
+        "input_documents": [
+            "French_test_pdf.pdf",
+            "toaz.info-yonsei-korean-1-2pdf-pr_68071ab8ac5ba2b69d1c82e73d606629.pdf"
+        ],
+        "persona": "Language Learner",
+        "job_to_be_done": "Summarize the key points from the provided language learning documents.",
+        "processing_timestamp": "2025-07-27T14:18:47.586099"
+    },
+    "extracted_sections": [
+        {
+            "document": "French_test_pdf.pdf",
+            "section_title": "General Information",
+            "importance_rank": 1,
+            "page_number": 147
+        },
+        {
+            "document": "French_test_pdf.pdf",
+            "section_title": "TABLE DES MATIÈRES",
+            "importance_rank": 2,
+            "page_number": 5
+        },
+        {
+            "document": "French_test_pdf.pdf",
+            "section_title": "General Information",
+            "importance_rank": 3,
+            "page_number": 123
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "French_test_pdf.pdf",
+            "refined_text": "Sixieme leçon TRAVAILLEZ POUR APPRENDRE, NE TRAVAILLEZ PAS POUR L'ARGENT",
+            "page_number": 147
+        },
+        {
+            "document": "French_test_pdf.pdf",
+            "refined_text": "Remerciements 9 Introduction 11 LES LEÇONS Chapitre un Père riche, père pauvre 25 Chapitre deux Première leçon Chapitre trois Deuxième leçon : . . 75 Chapitre quatre Troisième leçon Chapitre cinq Quatrième leçon . . . . 117 Chapitre six Cinquième leçon Chapitre sept Sixième leçon : . 159 LES DÉBUTS Chapitre huit Comment surmonter les obstacles 179 Chapitre neuf Lancez-vous! 201 Chapitre dix Voulez-vous en savoir davantage? 227 Épilogue Un enseignement collégial pour 7 000 $ 233 Agissez! 237 À propos des auteurs 239",
+            "page_number": 5
+        },
+        {
+            "document": "French_test_pdf.pdf",
+            "refined_text": "Cinquième leçon LES RICHES ENGENDRENT L'ARGENT",
+            "page_number": 123
+        }
+    ]
+}

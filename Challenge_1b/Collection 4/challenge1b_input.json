@@ -1,0 +1,23 @@
+{
+    "challenge_info": {
+        "challenge_id": "round_1b_004",
+        "test_case_name": "language_learning",
+        "description": "Language Learning Documents"
+    },
+    "documents": [
+        {
+            "filename": "French_test_pdf.pdf",
+            "title": "French Test PDF"
+        },
+        {
+            "filename": "toaz.info-yonsei-korean-1-2pdf-pr_68071ab8ac5ba2b69d1c82e73d606629.pdf",
+            "title": "Yonsei Korean 1-2"
+        }
+    ],
+    "persona": {
+        "role": "Language Learner"
+    },
+    "job_to_be_done": {
+        "task": "Summarize the key points from the provided language learning documents."
+    }
+}
