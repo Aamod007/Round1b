@@ -1,0 +1,76 @@
+{
+    "metadata": {
+        "input_documents": [
+            "Learn Acrobat - Create and Convert_1.pdf",
+            "Learn Acrobat - Create and Convert_2.pdf",
+            "Learn Acrobat - Edit_1.pdf",
+            "Learn Acrobat - Edit_2.pdf",
+            "Learn Acrobat - Export_1.pdf",
+            "Learn Acrobat - Export_2.pdf",
+            "Learn Acrobat - Fill and Sign.pdf",
+            "Learn Acrobat - Generative AI_1.pdf",
+            "Learn Acrobat - Generative AI_2.pdf",
+            "Learn Acrobat - Request e-signatures_1.pdf",
+            "Learn Acrobat - Request e-signatures_2.pdf",
+            "Learn Acrobat - Share_1.pdf",
+            "Learn Acrobat - Share_2.pdf",
+            "Test Your Acrobat Exporting Skills.pdf",
+            "The Ultimate PDF Sharing Checklist.pdf"
+        ],
+        "persona": "HR professional",
+        "job_to_be_done": "Create and manage fillable forms for onboarding and compliance.",
+        "processing_timestamp": "2025-07-28T20:29:25.734184"
+    },
+    "extracted_sections": [
+        {
+            "document": "The Ultimate PDF Sharing Checklist.pdf",
+            "page_number": 2,
+            "section_title": "General Information",
+            "importance_rank": 1,
+            "similarity_score": 0.4559
+        },
+        {
+            "document": "Learn Acrobat - Request e-signatures_2.pdf",
+            "page_number": 11,
+            "section_title": "Add verification information after signing",
+            "importance_rank": 2,
+            "similarity_score": 0.4215
+        },
+        {
+            "document": "Learn Acrobat - Request e-signatures_1.pdf",
+            "page_number": 2,
+            "section_title": "Send a document to get signatures from others",
+            "importance_rank": 3,
+            "similarity_score": 0.4097
+        },
+        {
+            "document": "The Ultimate PDF Sharing Checklist.pdf",
+            "page_number": 3,
+            "section_title": "General Information",
+            "importance_rank": 4,
+            "similarity_score": 0.4059
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "The Ultimate PDF Sharing Checklist.pdf",
+            "refined_text": "• chosen platform? • • following up as needed? Professional Tip: Clear Instructions Ensure your email instructions are clear and concise to avoid any confusion for your recipients. Sharing Checklist for Real Estate Professionals In the real estate industry, sharing documents efficiently is crucial for closing deals and keeping clients informed. Here's a tailored checklist to help you manage your PDF sharing needs. Real Estate Sharing Checklist • • the property listing or contract you need to share? • • Microsoft Teams or WhatsApp? • • just view it? •",
+            "page_number": 2
+        },
+        {
+            "document": "Learn Acrobat - Request e-signatures_2.pdf",
+            "refined_text": "In certain workflows, signature validation information may be unavailable during the signing but can be obtained later. For instance, a company official may sign a contract on a laptop while traveling without internet access. When internet access is later available, anyone validating the signature can add timestamping and revocation information to the PDF. Subsequent signature validations can also make use of this information. To add verification information after signing: 1. then right-click the signature in the PDF. 2. Information and methods used to include this long-term validation (LTV) information in the PDF comply with Part 4 of the ETSI 102 778 PDF Advanced Electronic Signatures (PAdES) standard. The command is unavailable if the signature is invalid, or is signed with a self-signed certificate. The command is also unavailable in case the verification time equals the current time.",
+            "page_number": 11
+        },
+        {
+            "document": "Learn Acrobat - Request e-signatures_1.pdf",
+            "refined_text": "1. tools 2. enter the details. The left pane provides information on getting signatures from others workflow. In the recipients field, add recipient email addresses in the order you want the document to be signed. Request signatures – Add recipients 3. appear to your recipients in the same way. Change the default text in the Subject & Message area as appropriate. Optional: If you want to add more people just for information, use the Add CC button to add their email addresses to the CC list. Enter the desired information and do one of the following:",
+            "page_number": 2
+        },
+        {
+            "document": "The Ultimate PDF Sharing Checklist.pdf",
+            "refined_text": "• stakeholders? • • fields, highlighting key property details? • • • • chosen platform? • • following up with clients for feedback or next steps? Professional Tip: Highlight Key Details Make sure to emphasize important property details in your message to capture your clients' attention. Conclusion Sharing PDFs with Adobe Acrobat is straightforward and efficient, whether you're working on a general project or managing real estate documents. By following these checklists, you can ensure that your sharing process is smooth and professional. Start sharing smarter today.",
+            "page_number": 3
+        }
+    ]
+}
