@@ -1,19 +1,50 @@
 # Approach Explanation
 
-**Model Used:** `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`
+## Overview
 
-## Core Logic & Methodology
+The Document Intelligence System is engineered for precise, multilingual information extraction from PDF documents. It combines advanced semantic search models with intelligent layout analysis to deliver contextually relevant content tailored to specific personas and tasks.
 
-The document intelligence system employs a sophisticated, two-stage pipeline to analyze PDF documents and extract highly relevant, task-focused information.
+---
 
-1.  **Persona and Task Interpretation**: The system begins by creating a semantic query from the `persona` and `job_to_be_done` fields in the input JSON. This query serves as the ground truth for all subsequent relevance scoring.
+### 1. **Semantic Query Construction**
 
-2.  **Intelligent Sectioning with Layout Analysis**: Each PDF is parsed using **PyMuPDF**, which provides detailed layout information. The script analyzes font attributes (size and weight) to heuristically identify section titles, allowing it to logically segment the document content even without explicit bookmarks. This method is more robust than simple text splitting.
+- The process starts by synthesizing a semantic query using the `persona` and `job_to_be_done` fields from the input JSON.
+- This query encapsulates the user's intent and sets the standard for what content is considered relevant.
 
-3.  **Multilingual Semantic Ranking (Stage 1)**: The content of each identified section is vectorized using the `paraphrase-multilingual-MiniLM-L12-v2` model. This powerful multilingual model computes the cosine similarity between each section and the persona-driven query. Sections are then ranked by this similarity score, and only those exceeding a **0.4 threshold** are considered for the next stage. The top 5 sections are selected.
+### 2. **Layout-Aware Sectioning**
 
-4.  **Paragraph-Level Refinement (Stage 2)**: For each of the top-ranked sections, the system performs a second level of analysis. The section's content is broken down into individual paragraphs. Each paragraph is then semantically scored against the same persona query. The 1-2 most relevant paragraphs are extracted and combined to form the final `refined_text`. This ensures the final output is both relevant and concise.
+- PDFs are parsed with **PyMuPDF**, which provides low-level access to document layout.
+- The system analyzes font size, weight, and spacing to heuristically define logical sections (headings, subheadings, body text).
+- This ensures that content is segmented in a manner that reflects the document's structure.
 
-5.  **Multilingual Handling**: The use of a dedicated multilingual sentence transformer ensures that content in all specified languages (English, French, Korean, etc.) is processed and understood natively without the need for a separate translation step, preserving semantic accuracy.
+### 3. **Multilingual Semantic Ranking (Stage 1)**
 
-6.  **Final Output Generation**: The top 5 sections and their corresponding refined text snippets are compiled into the `generated_output.json`. A single, consolidated `approach_explanation.md` is also created in the root directory to document this methodology.
+- Each extracted section is transformed into a dense vector using the `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` model.
+- The model supports multiple languages, allowing for seamless processing of international documents.
+- The system computes the similarity between each section vector and the semantic query to rank sections by relevance.
+
+### 4. **Paragraph-Level Refinement (Stage 2)**
+
+- The highest-ranked sections undergo a second analysis at the paragraph level.
+- Paragraphs are independently embedded and scored for relevance to the query.
+- This two-stage approach (section, then paragraph) improves precision and ensures that only the most pertinent text is extracted.
+
+### 5. **Multilingual Handling**
+
+- The use of a multilingual transformer model ensures accurate semantic matching regardless of the document's language.
+- This enables consistent performance across diverse datasets.
+
+### 6. **Output Generation**
+
+- The pipeline compiles the top 5 most relevant sections and their refined paragraphs into a structured JSON output (`generated_output.json`).
+- A consolidated summary of the methodology (`approach_explanation.md`) is also generated for transparency and reproducibility.
+
+---
+
+## Key Advantages
+
+- **Language Agnostic:** Works seamlessly across major languages.
+- **Contextual Accuracy:** Two-stage semantic filtering provides precise, task-aligned results.
+- **Adaptable:** Easily customizable for new personas or task requirements.
+
+For implementation details, refer to the repository README and codebase.
